@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## 密码哈希 {#password_hashing_title}
+## 密码哈希 {#password_hashing}
 
 最终每个人都会需要创建一个依赖用户登录的 PHP 应用。 用户名和密码被存放在数据库以便在后面用户登录的时候用来验证。
 
