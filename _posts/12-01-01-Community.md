@@ -1,20 +1,27 @@
 # 社区
 
-The PHP community is as diverse as it is large, and it's members are ready and willing to support new PHP programmers. You should consider joining your local PHP user group (PUG) or attending larger PHP conferences to learn more about the best practices shown here. You can also hang out on IRC in the #phpc channel on irc.freenode.com and follow the [@phpc][phpc-twitter] twitter account. Get out there, meet new developers, learn new topics and, above all, make new friends. Also there is a large Google+ Community for PHP Programmers where 9,000+ PHP Programmers are available to discuss about problem and solving others problem by each other. You can also join there on Google+ community for [PHP Programmer][php-programmers-gplus]
+PHP 社区大而多，并且其中的成员都准备好并且愿意支持新的 PHP 开发者。你应该考虑加入你本地的 PHP 用户组 (PUG) 
+或出席大型的 PHP 会议来学习更多这里展示的最佳实践。你也可以加入 IRC 频道#phpc 在 irc.freenode.com 上
+闲逛或者关注 [@phpc][phpc-twitter] 的推特账户。 走出去，结识新的开发者，学习新的主题，结交新的朋友。
+同样的还有一个很大的 Google+ 社区有超过9000个PHP程序员讨论问题和互相解决其他人的问题，你也可以加入
+[PHP 程序员G+社区][php-programmers-gplus]
 
-[Read the Official PHP Events Calendar][php-calendar]
+[阅读PHP官方的事件日历][php-calendar]
 
-## PHP User Groups
+## PHP 用户组
 
-If you live in a larger city, odds are there's a PHP user group nearby. Although there's not yet an official list of PUGs, you can easily find your local PUG by searching on [Google][google] or [Meetup.com][meetup]. If you live in a smaller town, there may not be a local PUG; if that's the case, start one!
+如果你生活在一个大城市，可能你附近就有一个 PHP 用户组。 虽然他们可能还不是官方名单上面的 PUG，
+你也可以通过在 [Google][google] 或者 [Meetup.com][meetup] 上搜索轻易地找到你当地的PUG
+如果你生活在一个较小的城市，可能当地还没有PUG，没关系，发起一个吧！
 
-[Read about User Groups on the PHP Wiki][php-wiki]
+[在 PHP 百科上面阅读用户组的相关信息][php-wiki]
 
-## PHP Conferences
+## PHP 会议
 
-The PHP community also hosts larger regional and national conferences in many countries around the world. Well-known members of the PHP community usually speak at these larger events, so it's a great opportunity to learn directly from industry leaders.
+PHP社区也会在世界上许多国家举办一些大型的区域性的或者国际的会议，知名的PHP社区成员通常会在大型活动中演讲，
+所以这是个直接从工业领袖中学习的好机会。
 
-[Find a PHP Conference][php-conf]
+[查找PHP会议][php-conf]
 
 [php-calendar]: http://www.php.net/cal.php
 [google]: https://www.google.com/search?q=php+user+group+near+me
