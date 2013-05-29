@@ -2,17 +2,17 @@
 isChild: true
 ---
 
-## Password Hashing {#password_hashing_title}
+## 密码哈希 {#password_hashing}
 
-Eventually everyone builds a PHP application that relies on user login. Usernames and passwords are stored in a database and later used to authenticate users upon login.
+最终每个人都会需要创建一个依赖用户登录的 PHP 应用。 用户名和密码被存放在数据库以便在后面用户登录的时候用来验证。
 
-It is important that you properly [_hash_][3] passwords before storing them. Password hashing is an irreversible, one way function performed against the users password. This produces a fix length string that can not be feasibly reversed. This means you can compare a hash against another to determine if they both came from the same source string, but you can not determine the original string. If passwords are not hashed and your database is accessed by an unauthorized third-party, all user accounts are now compromised. Some users may (unfortunately) use the same password for other services. Therefore, it is important to take security seriously.
+重要的是你应该适当地在存储之前 [_哈希_][3] 密码。 密码哈希是一个不可逆的、单向的函数作用于用户的密码之上。这会产生一个固定长度的字符串让你不可能逆转，意味着你可以比较两个哈希来判断他们是否来自于同一个源字符串，但你不能得到原来的字符串是什么。如果密码没有哈希过并且你的数据库被未授权的第三方访问到，所有用户的账户都会受到影响。有些用户可能（不幸的）在其他服务上使用相同的密码，因此，安全问题需要慎重考虑。
 
-**Hashing passwords with `password_hash`**
+**使用 `password_hash` 来哈希密码**
 
-In PHP 5.5 `password_hash` will be introduced. At this time it is using BCrypt, the strongest algorithm currently supported by PHP. It will be updated in the future to support more algorithms as needed though. The `password_compat` library was created to provide forward compatibility for PHP >= 5.3.7.
+在 PHP 5.5 `password_hash` 将会被推出。这次它将使用 BCrypt，这是 PHP 当前支持的最强的算法。这将会根据未来的需要更新来支持更多的算法。`password_compat` 库被创建用于提供 PHP >= 5.3.7 的向前兼容。
 
-Below we hash a string, we then check the hash against a new string. Because our two source strings are different ('secret-password' vs. 'bad-password') this login will fail. 
+下面我们会哈希一个字符串，然后和另一个新的字符串的哈希作比较。因为我们两个源字符串是不一样的('secret-password' 和 'bad-password') 这个验证不会通过。 
 
 {% highlight php %}                                                                                                                                                                                              
 <?php                                                                                                                                                                                                            
@@ -29,9 +29,9 @@ if (password_verify('bad-password', $passwordHash)) {
 
 
 
-* [Learn about `password_hash`] [1]
+* [学习关于 `password_hash`] [1]
 * [`password_compat` for PHP  >= 5.3.7 && < 5.5] [2]
-* [Learn about hashing in regards to cryptography] [3]
+* [学习密码学里面的哈希] [3]
 * [PHP `password_hash` RFC] [4]
 
 [1]: http://us2.php.net/manual/en/function.password-hash.php
