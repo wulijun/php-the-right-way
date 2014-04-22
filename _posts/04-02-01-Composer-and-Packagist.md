@@ -2,7 +2,7 @@
 isChild: true
 ---
 
-## Composer and Packagist
+## Composer与包列表
 
 Composer是一个**出色**的PHP依赖管理器，把项目的依赖列在`composer.json`文件中，然后通过一些简单的命令，Composer就会
 自动的帮你下载这些依赖，并配置好自动加载路径。
@@ -46,7 +46,7 @@ Composer可以安装在本地(在当前工作目录，不推荐这种方式)，�
 
 Composer通过文件`composer.json`跟踪项目的依赖。这个文件可以手工维护，也可以通过Composer管理，命令`php composer require`用于添加项目的依赖，如果项目下还没有`composer.json`文件，则会自动创建一个。下面是一个依赖[Twig][2]例子，在项目的根目录执行：
 
-	composer require twig/twig:~1.8
+    composer require twig/twig:~1.8
 
 或者通过`composer init`命令也可以一步步地引导你创建项目所需的`composer.json`文件。无论使用哪种方式创建了`composer.json`文件后，就可以通过Composer下载和安装项目依赖到目录`vendors/`:
 
@@ -61,20 +61,20 @@ require 'vendor/autoload.php';
 
 现在你就可以使用项目依赖的库了，它们会在需要的时候自动加载。
 
-### Updating your dependencies
+### 更新依赖的包
 
-Composer creates a file called `composer.lock` which stores the exact version of each package it downloaded when you first ran `php composer.phar install`. If you share your project with other coders and the `composer.lock` file is part of your distribution, when they run `php composer.phar install` they'll get the same versions as you. To update your dependencies, run `php composer.phar update`.
+Composer创建一个名为`composer.lock`的文件,来储存你第一次执行`php composer.phar install`命令时,Composer所下载的包的版本. 如果你与其他程序员分享你的项目,那`composer.lock`也必须在你的项目的发行版中.当他们运行`php composer.phar install`命令时,他们获得的依赖包的版本将会与你一样. 
+通过运行`php composer.phar update`,你可以更新依赖包.
 
-This is most useful when you define your version requirements flexibly. For instance a version requirement of ~1.8  means "anything newer than 1.8.0, but less than 2.0.x-dev". You can also use the `*` wildcard as in `1.8.*`. Now Composer's `php composer.phar update` command will upgrade all your dependencies to the newest version that fits the restrictions you define.
+当你需要灵活的定义所需的版本时，这里有个非常有用的方法.例如,版本需求 ~1.8意味着"所有高于1.8.0且低于2.0.x-dev的版本".你也可以使用通配符`*` 如`1.8.*`.然后,运行`php composer.phar update`命令将会把你的依赖包升级到符合限制条件的最新版.
 
-### Update Notifications
+### 新版本通知
 
-To receive notifications about new version releases you can sign up for [VersionEye][3], a web service that can monitor 
-your GitHub and BitBucket accounts for `composer.json` files and send emails with new package releases.
+你可以注册[VersionEye][3]账号来获取新版本发布的通知,VersionEye是一个web服务,它可以监控你的GitHub账号与BitBucket账号,并在`composer.json`文件中的依赖包有新版本发布时发送邮件给你.
 
-### Checking your dependencies for security issues
+### 检查依赖包的安全性
 
-The [Security Advisories Checker][4] is a web service and a command-line tool, both will examine your `composer.lock` file and tell you if you need to update any of your dependencies.
+[Security Advisories Checker][4]是一个web服务与命令行工具, 它会检查你的`composer.lock`文件,并告诉你是否有因安全性而需要更新的包.
 
 * [学习Composer][5]
 
