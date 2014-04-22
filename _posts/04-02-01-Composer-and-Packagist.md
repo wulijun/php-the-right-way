@@ -63,18 +63,18 @@ require 'vendor/autoload.php';
 
 ### 更新依赖的包
 
-Composer创建一个名为`composer.lock`的文件,来储存你第一次执行`php composer.phar install`命令时,Composer所下载的包的版本. 如果你与其他程序员分享你的项目,那`composer.lock`也必须在你的项目的发行版中.当他们运行`php composer.phar install`命令时,他们获得的依赖包得版本将会与你一样. 
+Composer创建一个名为`composer.lock`的文件,来储存你第一次执行`php composer.phar install`命令时,Composer所下载的包的版本. 如果你与其他程序员分享你的项目,那`composer.lock`也必须在你的项目的发行版中.当他们运行`php composer.phar install`命令时,他们获得的依赖包的版本将会与你一样. 
 通过运行`php composer.phar update`,你可以更新依赖包.
 
 当你需要灵活的定义所需的版本时，这里有个非常有用的方法.例如,版本需求 ~1.8意味着"所有高于1.8.0且低于2.0.x-dev的版本".你也可以使用通配符`*` 如`1.8.*`.然后,运行`php composer.phar update`命令将会把你的依赖包升级到符合限制条件的最新版.
 
 ### 新版本通知
 
-你可以注册[VersionEye][3]账号来获取新版本发布的通知,VersionEye是一个web服务,它可以监控你的GitHub账号与BitBucket账号,并在`composer.json`文件中得依赖包有新版本发布时发送邮件给你.
+你可以注册[VersionEye][3]账号来获取新版本发布的通知,VersionEye是一个web服务,它可以监控你的GitHub账号与BitBucket账号,并在`composer.json`文件中的依赖包有新版本发布时发送邮件给你.
 
 ### 检查依赖包的安全性
 
-[Security Advisories Checker][4]是一个web服务与命令行工具, 它会检查你的`composer.lock`文件,并告诉你是否有需要更新的包.
+[Security Advisories Checker][4]是一个web服务与命令行工具, 它会检查你的`composer.lock`文件,并告诉你是否有因安全性而需要更新的包.
 
 * [学习Composer][5]
 
