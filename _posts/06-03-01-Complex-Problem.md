@@ -1,26 +1,23 @@
 ---
+title: 复杂问题
+anchorid: complex_problem_title
 isChild: true
 ---
 
-## Complex Problem {#complex_problem_title}
+<h2 id="complex_problem_title">复杂问题</h2>
 
-If you have ever read about Dependency Injection then you have probably seen the terms *"Inversion of Control"* or *"Dependency Inversion Principle"*.
-These are the complex problems that Dependency Injection solves.
+如果你涉猎了依赖注入的有关内容，那么你很可能看到过 *"控制反转"* or *"依赖反转原则"* 这两个条目。这是依赖注入所能解决的复杂问题。
 
-### Inversion of Control
+### 控制反转
 
-Inversion of Control is as it says, "inverting the control" of a system by keeping organisational control entirely separate from our objects.
-In terms of Dependency Injection, this means loosening our dependencies by controlling and instantiating them elsewhere in the system.
+控制反转是说，一个系统的控制反转是从我们的对象中通过保持组织控制的完全独立。
+依赖反转的作用是在系统的其他地方去控制和实例化它们，以便降低耦合度。
 
-For years, PHP frameworks have been achieving Inversion of Control, however, the question became, which part of control
-are you inverting, and where to? For example, MVC frameworks would generally provide a super object or base controller that other
-controllers must extend to gain access to its dependencies. This **is** Inversion of Control, however, instead of loosening
-dependencies, this method simply moved them.
+多年来，PHP框架已经实现了控制反转，但是，随之而来的问题是，你反转了哪一部分的控制器，而且它又在哪里？例如，MVC框架通常提供了一个超级对象，或者基础的控制器，其他的控制器必须继承和依赖它。这就是依赖反转，是简单的移动他们而不是降低耦合。
 
-Dependency Injection allows us to more elegantly solve this problem by only injecting the dependencies we need, when we need them,
-without the need for any hard coded dependencies at all.
+依赖注入允许我们需要他们的时候，只有注入我们需要依赖，才能更优雅的解决这个问题，没有任何强代码的依赖性。
 
-### Dependency Inversion Principle
+### 依赖反转原则
 
 Dependency Inversion Principle is the "D" in the S.O.L.I.D set of object oriented design principles that states one should
 *"Depend on Abstractions. Do not depend on concretions."*. Put simply, this means our dependencies should be interfaces/contracts or abstract
