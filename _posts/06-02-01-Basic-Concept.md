@@ -1,17 +1,19 @@
 ---
+title: 日期和时间
+anchorid: basic_concept_title
 isChild: true
 ---
 
-## Basic Concept {#basic_concept_title}
+<h2 id="basic_concept_title">基本概念</h2>
 
-We can demonstrate the concept with a simple, yet naive example.
+我们可以用一个简单而又天真的例子，来证明这个概念。
 
-Here we have a `Database` class that requires an adapter to speak to the database. We instantiate the
-adapter in the constructor and create a hard dependency. This makes testing difficult and means the `Database` class is
-very tightly coupled to the adapter.
+我们有一个 `Database` 的类，这个类要求适配数据库。我们在类的构造函数里实例化了这个适配器，并且创建了一个高耦合的依赖。 这才测试的时候会很困难，并且这就意味着 `Database` 类和适配器是高耦合关系。
 
 {% highlight php %}
+
 <?php
+
 namespace Database;
 
 class Database
@@ -25,12 +27,15 @@ class Database
 }
 
 class MysqlAdapter {}
+
 {% endhighlight %}
 
-This code can be refactored to use Dependency Injection and therefore loosen the dependency.
+上面这个代码可以使用依赖来解耦合。
 
 {% highlight php %}
+
 <?php
+
 namespace Database;
 
 class Database
@@ -44,8 +49,7 @@ class Database
 }
 
 class MysqlAdapter {}
+
 {% endhighlight %}
 
-Now we are giving the `Database` class its dependency rather than it creating it itself. We could even create a method
-that would accept an argument of the dependency and set it that way, or if the `$adapter` property was `public` we could
-set it directly.
+现在我们可以创建 `Database` 类的依赖了，而不用创建它本身。我们甚至可以创建一个方法，接受依赖当作参数，然后设置它，或者如果`$adapter`这个属性是`public`的，我们可以直接去设置它。
