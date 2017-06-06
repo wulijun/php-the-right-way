@@ -1,4 +1,5 @@
 ---
+title: 命名空间
 anchorid: namespaces
 isChild: true
 ---
@@ -13,8 +14,13 @@ _命名空间_解决了这个问题。如PHP手册里描述的那样，命名空
 
 [PSR-0][psr0] 里提供了命名空间的推荐使用方式, 它试图提供一个标准的文件、类和命名空间的使用惯例，从而让代码做到即插即用。
 
+2013年12月，PHP-FIG发布了新的自动加载标准：[PSR-4][psr4]，将来可能会替换旧的PSR-0标准。PSR-4要求PHP5.3版本以上，而目前很多项目用的都是PHP5.2，
+因此当前两个标准都可用，但是对于新应用或者包的话，应优先考虑PSR-4.
+
 * [了解更多命名空间][namespaces]
 * [了解更多PSR-0][psr0]
+* [了解更多PSR-4][psr4]
 
 [namespaces]: http://php.net/manual/en/language.namespaces.php
 [psr0]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md
+[psr4]: https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md
